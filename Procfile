@@ -1,0 +1,1 @@
+web: gunicorn schoollms.wsgi --log-file -
