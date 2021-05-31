@@ -1,0 +1,78 @@
+{% extends 'dashboard.html' %} {% block content %} {% load static %}
+
+<h3 class="mb-5" style="text-align: center;">Student Profile</h3>
+<div class="row">
+    <div class="col-lg-3">
+        <img src="{% static 'images/profile.png' %}" alt="">
+        <button class="btn btn-outline-primary">Change Photo</button>
+    </div>
+    <div class="col-lg-9">
+        <h4>Basic Details</h4>
+        <hr>
+        <div class="form-row mt-3">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="fname" placeholder="First Name" readonly>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="reg" placeholder="Register Number" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="grade" placeholder="Grade" readonly>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Email" readonly>
+        </div>
+        <!-- <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email" aria-describedby="edit" readonly>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="edit">Edit</button>
+            </div>
+        </div> -->
+        <div class="form-group">
+            <input type="text" class="form-control" id="dob" placeholder="Date of Birth" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="gender" placeholder="Gender" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="address" placeholder="Address" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="Contact" placeholder="Contact Number" readonly>
+        </div>
+        <h4>Details of Parent/Guardian</h4>
+        <hr>
+        <div class="form-row mt-3">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="fnameparent" placeholder="First Name" readonly>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="lnameparent" placeholder="Last Name" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="relation" placeholder="Relationship with Student" readonly>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="emailparent" placeholder="Email" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="contactparent" placeholder="Contact Number" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="addrparent" placeholder="Address" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="occuparent" placeholder="Occupation" readonly>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="otherparent" placeholder="Other Information" readonly>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
