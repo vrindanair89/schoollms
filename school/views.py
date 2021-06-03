@@ -21,4 +21,8 @@ def login(request):
     return render(request,'login.html')
 def register(request):
     return render(request,'registration.html')
+def attendance(request):
+    return render(request,'attendance.html')
+def report(request):
+    return render(request,'report.html')
 
