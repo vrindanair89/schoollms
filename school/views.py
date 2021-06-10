@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-
+def welcome(request):
+    return render(request,'samplesite.html')
 def dashboard(request):
     return render(request,'dashboard.html')
 def events(request):
@@ -25,4 +26,7 @@ def attendance(request):
     return render(request,'attendance.html')
 def report(request):
     return render(request,'report.html')
+def lesson(request):
+    return render(request,'lessonsdashboard.html')
+    
 
