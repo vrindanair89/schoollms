@@ -14,6 +14,10 @@ urlpatterns = [
     path('attendance',views.attendance,name='attendance'),
     path('report',views.report,name='report'),
     path('lesson',views.lesson,name='lesson'),
-    
-    
+    path('teacherdashboard',views.teacherdashboard,name='teacherdashboard'),    
+    path('addexam',views.addexam,name='addexam'),
+    path('addassignment',views.addassignment,name='addassignment'),
+    path('addtutorial',views.addtutorial,name='addtutorial'),
+    path('addevent',views.addevent,name='addevent'),
+
 ]

@@ -1,0 +1,160 @@
+{% extends 'teacherdashboard.html' %} {% block teacher %}
+<h3 align='center'>Exam Management</h3>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="addexam-tab" data-toggle="tab" href="#addexam" role="tab" aria-controls="addexam" aria-selected="true">Add Examination Link</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="question-tab" data-toggle="tab" href="#question" role="tab" aria-controls="question" aria-selected="false">Add Questions</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="report-tab" data-toggle="tab" href="#report" role="tab" aria-controls="report" aria-selected="false">View Reports</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="addexam" role="tabpanel" aria-labelledby="addexam-tab">
+        <form>
+            <br><br>
+            <div class="form-group row">
+                <label for="class" class="col-sm-2 col-form-label">Class</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectclass">
+                        <option selected>Select</option>
+                        <option value="1">8</option>
+                        <option value="2">9</option>
+                        <option value="3">10</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="selectsubject" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectsubject">
+                    <option selected>Select</option>
+                    <!-- <option value="1"></option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="chapter" class="col-sm-2 col-form-label">Chapter</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectchapter">
+                    <option selected>Select</option>
+                    <!-- <option value="1">8</option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="qtn" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="qtn">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="desc" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="desc">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10 ml-auto">
+                    <button type="submit" class="btn btn-primary">Add Examination</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="question-tab">
+        <form>
+            <br><br>
+            <div class="form-group row">
+                <label for="selectclass" class="col-sm-2 col-form-label">Class</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectclass">
+                    <option selected>Select</option>
+                    <option value="1">8</option>
+                    <option value="2">9</option>
+                    <option value="3">10</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="selectsubject" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectsubject">
+                    <option selected>Select</option>
+                    <!-- <option value="1"></option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="chapter" class="col-sm-2 col-form-label">Chapter</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectchapter">
+                    <option selected>Select</option>
+                    <!-- <option value="1">8</option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="question" class="col-sm-2 col-form-label">Question</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="question">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ans1" class="col-sm-2 col-form-label">Option 1</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ans1">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ans2" class="col-sm-2 col-form-label">Option 2</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ans2">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ans3" class="col-sm-2 col-form-label">Option 3</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ans3">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ans4" class="col-sm-2 col-form-label">Option 4</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ans4">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ans" class="col-sm-2 col-form-label">Answer</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ans">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10 ml-auto">
+                    <button type="submit" class="btn btn-primary">Add Question</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="report-tab">...</div>
+</div>
+
+{% endblock %}

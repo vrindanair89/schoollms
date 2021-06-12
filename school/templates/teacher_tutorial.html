@@ -1,0 +1,143 @@
+{% extends 'teacherdashboard.html' %} {% block teacher %} {% load static %}
+<h3 align='center'>Tutorials</h3>
+<br>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="addtutorial-tab" data-toggle="tab" href="#addtutorial" role="tab" aria-controls="addtutorial" aria-selected="true">Add Videos</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="report-tab" data-toggle="tab" href="#report" role="tab" aria-controls="report" aria-selected="false">Add Notes</a>
+    </li>
+
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="addtutorial" role="tabpanel" aria-labelledby="addtutorial-tab">
+        <form>
+            <br><br>
+            <div class="form-group row">
+                <label for="class" class="col-sm-2 col-form-label">Class</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectclass">
+                        <option selected>Select</option>
+                        <option value="1">8</option>
+                        <option value="2">9</option>
+                        <option value="3">10</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="selectsubject" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectsubject">
+                    <option selected>Select</option>
+                    <!-- <option value="1"></option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="chapter" class="col-sm-2 col-form-label">Chapter</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectchapter">
+                    <option selected>Select</option>
+                    <!-- <option value="1">8</option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="title" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="title">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastdate" class="col-sm-2 col-form-label">Upload File</label>
+                <div class="col-sm-10">
+                    <input type="file" id="lastdate">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="desc" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="desc">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10 ml-auto">
+                    <button type="submit" class="btn btn-primary">Add Video</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="report-tab">
+        <form>
+            <br><br>
+            <div class="form-group row">
+                <label for="class" class="col-sm-2 col-form-label">Class</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectclass">
+                        <option selected>Select</option>
+                        <option value="1">8</option>
+                        <option value="2">9</option>
+                        <option value="3">10</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="selectsubject" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectsubject">
+                    <option selected>Select</option>
+                    <!-- <option value="1"></option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="chapter" class="col-sm-2 col-form-label">Chapter</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectchapter">
+                    <option selected>Select</option>
+                    <!-- <option value="1">8</option>
+                    <option value="2">9</option>
+                    <option value="3">10</option> -->
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="title" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="title">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastdate" class="col-sm-2 col-form-label">Upload File</label>
+                <div class="col-sm-10">
+                    <input type="file" id="lastdate">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="desc" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="desc">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10 ml-auto">
+                    <button type="submit" class="btn btn-primary">Add Notes</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

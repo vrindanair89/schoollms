@@ -28,5 +28,13 @@ def report(request):
     return render(request,'report.html')
 def lesson(request):
     return render(request,'lessonsdashboard.html')
-    
-
+def teacherdashboard(request):
+    return render(request,'teacherdashboard.html')
+def addexam(request):
+    return render(request,'addexam.html')  
+def addassignment(request):
+    return render(request,'teacher_assignment.html') 
+def addtutorial(request):
+    return render(request,'teacher_tutorial.html')
+def addevent(request):
+    return render(request,'teacher_event.html')
