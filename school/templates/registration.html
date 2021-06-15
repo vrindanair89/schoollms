@@ -1,131 +1,126 @@
 {% extends 'samplesite.html' %} {% block main %}
 
-<div class="row mt-5 container">
-    <div class="col-lg-4"></div>
-    <div class="col-lg-6">
-        <form>
-            <h3 align="center">Registration Form</h3>
-            <h5>Basic Details</h5>
-            <hr>
-            <div class="form-row mt-3">
 
-                <div class="form-group col-md-6">
+<form>
+    <h3 align="center">Registration Form</h3>
+    <h5>Basic Details</h5>
+    <hr>
+    <div class="form-row mt-3">
 
-                    <input type="text" class="form-control" id="fname" placeholder="First Name">
-                </div>
-                <div class="form-group col-md-6">
+        <div class="form-group col-md-6">
 
-                    <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="form-group">
+            <input type="text" class="form-control" id="fname" placeholder="First Name">
+        </div>
+        <div class="form-group col-md-6">
 
-                <select id="grade" class="form-control">
+            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="form-group">
+
+        <select id="grade" class="form-control">
                         <option selected>Grade</option>
                         <option>8</option>
                         <option>9</option>
                         <option>10</option>
            
                       </select>
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
 
-                <input type="email" class="form-control" id="email" placeholder="Email">
-            </div>
-            <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
 
-                <input type="password" class="form-control" id="pswd" placeholder="Password">
+        <input type="password" class="form-control" id="pswd" placeholder="Password">
 
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
 
-                <input type="password" class="form-control" id="pswdcon" placeholder="Confirm Password">
+        <input type="password" class="form-control" id="pswdcon" placeholder="Confirm Password">
 
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
 
-                <input type="date" class="form-control" id="dob">
+        <input type="date" class="form-control" id="dob">
 
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
 
-                <select id="gender" class="form-control">
+        <select id="gender" class="form-control">
                         <option selected>Gender</option>
                         <option>Male</option>
                         <option>Female</option>
                         <option>Others</option>
            
                       </select>
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
 
-                <input type="text" class="form-control" id="address" placeholder="Address">
+        <input type="text" class="form-control" id="address" placeholder="Address">
 
-            </div>
+    </div>
 
-            <div class="form-row">
-                <div class="form-group col-md-6">
+    <div class="form-row">
+        <div class="form-group col-md-6">
 
-                    <input type="text" class="form-control" id="inputCity" placeholder="City">
-                </div>
-                <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="inputCity" placeholder="City">
+        </div>
+        <div class="form-group col-md-4">
 
-                    <select id="inputState" class="form-control">
+            <select id="inputState" class="form-control">
                       <option selected>State</option>
                       <option>...</option>
                     </select>
-                </div>
-                <div class="form-group col-md-2">
+        </div>
+        <div class="form-group col-md-2">
 
-                    <input type="text" class="form-control" id="inputZip" placeholder="Pincode">
-                </div>
-            </div>
-            <div class="form-group">
-
-                <input type="text" class="form-control" id="contact" placeholder="Contact Number">
-
-            </div>
-            <div class="form-group">
-                <label for="profilepic">Upload Photo</label><br>
-                <input type="file" name="" id="profilepic">
-
-            </div>
-            <h5>Details of Parent</h5>
-            <hr>
-            <div class="form-row mt-3">
-                <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="fnameparent" placeholder="First Name">
-                </div>
-                <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="lnameparent" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="relation" placeholder="Relationship with Student">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" id="emailparent" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="contactparent" placeholder="Contact Number">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="addrparent" placeholder="Address">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="occuparent" placeholder="Occupation">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="otherparent" placeholder="Other Information">
-            </div>
-
-            <!-- <h5>Payment Details</h5>
-                <hr> -->
-            <button type="submit" class="btn btn-primary">Sign Up</button>
-        </form>
+            <input type="text" class="form-control" id="inputZip" placeholder="Pincode">
+        </div>
     </div>
-    <div class="col-lg-2"></div>
-</div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" id="contact" placeholder="Contact Number">
+
+    </div>
+    <div class="form-group">
+        <label for="profilepic">Upload Photo</label><br>
+        <input type="file" name="" id="profilepic">
+
+    </div>
+    <h5>Details of Parent</h5>
+    <hr>
+    <div class="form-row mt-3">
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="fnameparent" placeholder="First Name">
+        </div>
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="lnameparent" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="relation" placeholder="Relationship with Student">
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" id="emailparent" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="contactparent" placeholder="Contact Number">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="addrparent" placeholder="Address">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="occuparent" placeholder="Occupation">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="otherparent" placeholder="Other Information">
+    </div>
+
+    <!-- <h5>Payment Details</h5>
+                <hr> -->
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
