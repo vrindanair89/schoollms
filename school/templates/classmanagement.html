@@ -1,0 +1,141 @@
+{% extends 'admin_dashboard.html' %} {% block admin %}
+<h3 align='center'>Class Management</h3>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="addclass-tab" data-toggle="tab" href="#addclass" role="tab" aria-controls="addclass" aria-selected="true">Add New Class</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="tech_subj-tab" data-toggle="tab" href="#tech_subj" role="tab" aria-controls="tech_subj" aria-selected="false">Teachers to Subjects</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="tech_class-tab" data-toggle="tab" href="#tech_class" role="tab" aria-controls="tech_class" aria-selected="false">Teachers to Classes</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="rep-tab" data-toggle="tab" href="#rep" role="tab" aria-controls="rep" aria-selected="false">Reports</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="addclass" role="tabpanel" aria-labelledby="addclass-tab">
+        <form>
+            <br><br>
+            <div class="form-group row">
+                <label for="class" class="col-sm-2 col-form-label">Class</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="selectclass">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="selectsubject" class="col-sm-2 col-form-label">Class Teacher</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectsubject">
+                    <option selected>Select</option>
+                    
+<!-- for each -->
+
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10 ml-auto">
+                    <button type="submit" class="btn btn-primary">Submit </button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+
+            </div>
+        </form>
+        <div>
+            <h4 align="center">Report</h4>
+            <table border="1" width="50%" align="center">
+                <tr>
+                    <th>ID</th>
+                    <th>Class</th>
+                    <th>Class Teacher's ID</th>
+                    <th>Teacher's Name</th>
+                </tr>
+                {% for x in key %}
+                <tr>
+                    <td>{{x.id}}</td>
+                    <td>{{x.class_id}}</td>
+                    <td>{{x.class_teacher}}</td>
+                    <td>{{x.class_teacher}}</td>
+                </tr>
+                {% endfor %}
+
+
+
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <div class="tab-pane fade" id="tech_subj" role="tabpanel" aria-labelledby="tech_subj-tab">
+        <form>
+            <br><br>
+
+            <div class="form-group row">
+                <label for="selectsubject" class="col-sm-2 col-form-label">Teacher</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectsubject">
+                    <option selected>Select</option>
+                    
+
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="chapter" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectchapter">
+                    <option selected>Select</option>
+                   
+                  </select>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-sm-10 ml-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="tab-pane fade" id="tech_class" role="tabpanel" aria-labelledby="tech_class-tab">
+        <form>
+            <br><br>
+
+            <div class="form-group row">
+                <label for="selectsubject" class="col-sm-2 col-form-label">Teacher</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectsubject">
+                    <option selected>Select</option>
+                    
+
+                  </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="chapter" class="col-sm-2 col-form-label">Class</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="selectclass">
+                    <option selected>Select</option>
+                   
+                  </select>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-sm-10 ml-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

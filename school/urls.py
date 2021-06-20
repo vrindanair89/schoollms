@@ -19,5 +19,13 @@ urlpatterns = [
     path('addassignment',views.addassignment,name='addassignment'),
     path('addtutorial',views.addtutorial,name='addtutorial'),
     path('addevent',views.addevent,name='addevent'),
+    path('admindashboard',views.admindashboard,name='admindashboard'),
+    path('classmanagement',views.classmanagement,name='classmanagement'),
+
+    path('sum',views.sum,name='sum'),
+    path('findsum',views.findsum,name='findsum'),
+    path('cal',views.cal,name='cal'),
+    path('reg',views.reg,name='reg'),
+    path('repo',views.repo,name='repo'),
 
 ]

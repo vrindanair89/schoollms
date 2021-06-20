@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <form action="findsum">
+    <form action="cal" method="POST">
+        {% csrf_token %}
         <input type="number" name="fnum" id="fnum" placeholder="Enter first Number">
         <input type="number" name="snum" id="snum" placeholder="Enter Second Number">
         <button type="submit">Find Sum</button> {{sum}}

@@ -1,0 +1,22 @@
+{% extends 'classmanagement.html' %} {% load static %} {% block report %}
+
+<table border="1" width="50%" align="center">
+    <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Place</th>
+        <th>Contact</th>
+    </tr>
+    {% for x in key %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.first_name}}</td>
+        <td>{{x.place}}</td>
+        <td>{{x.contact}}</td>
+    </tr>
+    {% endfor %}
+
+
+
+</table>
+{% endblock %}
